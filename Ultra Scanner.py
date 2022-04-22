@@ -15,6 +15,8 @@ target = input('Enter the Ip address you want to scan: ')
 queue = Queue()
 open_ports = []
 
+print('Starting scan...')
+
 def portscan(port):
     try:
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
